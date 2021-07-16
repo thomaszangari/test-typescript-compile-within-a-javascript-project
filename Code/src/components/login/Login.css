@@ -1,0 +1,93 @@
+/*#root {*/
+/*  background-image: url("/images/MASSLotterycolor.jpg");*/
+/*  background-size: cover;*/
+/*  background-repeat: no-repeat;*/
+/*}*/
+.login {
+  font-family: Myriad Pro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100vh;*/
+  /*background-image: url("/images/MASSLotterycolor.jpg");*/
+  /*background-size: cover;*/
+}
+.app-header-logo {
+  text-align: right;
+}
+.login-panel {
+  filter: drop-shadow(18px 18px 18px  #005288);
+  position: relative;
+  width: 398px;
+  height: 362px;
+  background-color: rgba(0, 82, 136, 0.5);
+  /*opacity: 0.5;*/
+
+}
+.login-panel img {
+  /*margin-top: 40%;*/
+  margin-top: 20%;
+  opacity: 0.5;
+}
+.login-form {
+  position: absolute;
+  top: 13%;
+  left: 13%;
+  height: 100%;
+
+  /*background-color: tomato;*/
+  /*background-image: url("/images/lottery_numbers_blue.png");*/
+}
+
+.login-form input {
+  margin-bottom: 35px;
+  min-width: 280px;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  background: none;
+  border-radius: 0;
+  color: #FFFFFF !important;
+}
+.login-form input:focus {
+  border: none !important;
+  border-bottom: 2px solid #FFFFFF !important;
+  background: none !important;
+  border-radius: 0 !important;
+  font-family: Barlow;
+  font-weight: 400;
+}
+.login-form input::placeholder {
+  color: #FFFFFF !important;
+  font-family: Barlow;
+  font-weight: 400;
+}
+.login-button, .login-button:hover {
+  position: absolute;
+  right: 0;
+  bottom: 17%;
+  top: auto;
+
+  background-color: #1e4b75;
+  color: white;
+  /*color: rgba(0, 82, 136, 1) !important;*/
+  border: none;
+  border-radius: 5px;
+  font-family: Barlow;
+  font-weight: 400;
+  min-height: 40px !important;
+}
+
+.app-invalid-password {
+  color: red;
+}
+.app-error-message{
+  background: #FFC199;
+  color: #000000 !important;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 2px 5px;
+  border-left: 9px solid #dc3545;
+  margin-bottom: 1%;
+  margin-right: 3%;
+  max-width: 300px;
+}

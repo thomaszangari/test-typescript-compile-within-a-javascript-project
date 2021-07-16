@@ -1,0 +1,80 @@
+.claim-payment-container {
+    margin: 2px 0;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 15px;
+    height: 90%;
+}
+.claim-payment-panel {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #173E67;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    height: 100%;
+}
+.claim-payment-panel-row {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.claim-payment-container .no-data-message {
+    font-size: 1rem;
+}
+
+/*.claim-payment-container .show-detail-button {*/
+/*    !*float: right;*!*/
+/*    background-color: #1e4b75;*/
+/*    font-size: 0.9rem;*/
+/*    color: #FFFFFF;*/
+/*    position: absolute;*/
+/*    right:    25px;*/
+/*    bottom:   0;*/
+/*}*/
+/*.show-detail-button:hover {*/
+/*    background-color: #359FB1 !important;*/
+/*    border-color: #359FB1 !important;*/
+/*}*/
+
+.show-detail-button {
+    margin-top: 10px;
+    justify-content: center;
+    min-height: 30px;
+    min-width: 110px;
+    background-color: #1E4B75 !important;
+    border-color: #1E4B75 !important;
+    color: #FFFFFF;
+    align-items: center;
+    margin-right: 10px;
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    box-shadow: 0 0 2px #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.show-detail-button:hover {
+    background-color: #359FB1 !important;
+    border-color: #359FB1 !important;
+}
+
+.modal-header {
+    font-size: 21px;
+}
+.modal-body input{
+    font-size: 13px;
+}
+
+.bank-name {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: -25px !important;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+.warning-message {
+    color: #ff0303;
+    font-size: 13px;
+    margin-top: -25px !important;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,16 @@
+.success-msg .toast {
+    background-color: #6791B1;
+}
+.error-msg .toast {
+    background-color: red;
+}
+.my-toast {
+    position: absolute;
+    top: -25%;
+    right: 40%;
+}
+.app-toast-box {
+    position: relative;
+    min-height: 200px;
+    z-index: 999;
+}

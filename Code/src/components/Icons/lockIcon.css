@@ -1,0 +1,10 @@
+.lock-icon {
+    cursor: pointer;
+}
+
+.unlock-icon {
+    pointer-events: none;
+}
+.inactive {
+    opacity: 0.4;
+}

@@ -1,0 +1,108 @@
+.system-dashboard-container{
+    position: relative;
+}
+.system-dashboard-widget-container{
+    border-top: 1px solid #ffffff;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px auto;
+    grid-template-rows: 85px 85px 15px;
+}
+.system-dashboard-graph-container{
+    border-top: 1px solid white;
+    background: #173e67;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.graphs-window{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+}
+.cards-window{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+}
+.system-dashboard-graph-mobile{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    width: 50%;
+    text-align: center;    
+    border-radius: 5px;
+    background: #1d507f;
+}
+.system-dashboard-graph-infrastructure{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    width: 50%;    
+    text-align: center;    
+    border-radius: 5px;
+    background: #1d507f;
+}
+.separator {
+    border: 1px solid #FFFFFF;
+}
+.uptime-container {    
+    grid-column: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 10px;
+}
+.logged-in-info{    
+    background-color: #173e67;
+}
+.container-title{
+    grid-row: 3;
+    color: white;
+    font-family: Barlow;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.graph-title{
+    color: white;
+    font-family: Barlow;
+    font-weight: 400;
+}
+.c1r1{
+    grid-column: 1;
+    grid-row: 1;
+}
+.c2r1{
+    grid-column: 2;
+    grid-row: 1;
+}
+.c3r1{
+    grid-column: 3;
+    grid-row: 1;
+}
+.c4r1{
+    grid-column: 4;
+    grid-row: 1;
+}
+.c1r2{
+    grid-column: 1;
+    grid-row: 2;
+}
+.c2r2{
+    grid-column: 2;
+    grid-row: 2;
+}
+.c5{
+    position: absolute;
+    right: 1%;
+}
+.c5-chart{
+    position: absolute;
+    right: 200px;
+}

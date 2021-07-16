@@ -1,0 +1,21 @@
+.inbound-rule-container{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.rule-select select {
+    width: 100%;
+}
+.inbound-rule-label {
+    color: #ddecef;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inbound-rule-container button {
+    margin: 5px;
+    margin-right: 0;
+}
+.button-panel {
+    position: absolute; /*or fixed*/
+    right: 0px;
+    margin-left: 13%;
+}

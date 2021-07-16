@@ -1,0 +1,22 @@
+.app-textbox input {
+    margin-bottom: 35px;
+    min-width: 280px;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    background: none;
+    border-radius: 0;
+    color: #FFFFFF !important;
+}
+.app-textbox input:focus {
+    border: none !important;
+    border-bottom: 2px solid #FFFFFF !important;
+    background: none !important;
+    border-radius: 0 !important;
+}
+.app-textbox input::placeholder {
+    color: #FFFFFF !important;
+}
+.app-textbox input:disabled {
+    background-color: #005288;
+    opacity: 0.3;
+}

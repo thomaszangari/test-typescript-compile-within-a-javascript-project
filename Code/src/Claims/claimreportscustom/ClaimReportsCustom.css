@@ -1,0 +1,66 @@
+.player-reports-child {
+    /*min-width: 100px;*/
+    margin: 0;
+    position: relative;
+    top: 1%;
+    right: 1%;
+    left: 1%;
+    min-height: 280px;
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    /*box-shadow: 0 0 18px #005288;*/
+    /*background-color: #005288;*/
+}
+.player-reports-panel {
+    padding: 10px 15px;
+    background-color: #173E67;
+    /*position: absolute;*/
+    top: 15px; bottom: 15px; left: 20px; right: 20px;
+}
+.player-reports-panel input[type=text] {
+    min-width: 100px !important;
+    max-width: 120px !important;
+    margin-bottom: 2px !important;
+    font-size: 13px !important;
+    height: 25px !important;
+    padding-left: 0;
+}
+.player-report-container{
+    margin: 2px 0;
+    position: relative;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+}
+.player-reports-label {
+    color: #ddecef;
+    font-size: 13px;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+.player-reports-value {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    /*text-transform: uppercase;*/
+}
+.report-search-container{
+    margin-top:100px;
+    margin-left:80%;
+}
+.report-search-btn{
+    margin-top: 10px;
+    justify-content: center;
+    min-height: 30px;
+    min-width: 110px;
+    background-color: #1E4B75;
+    border-color: #1E4B75;
+    color: #FFFFFF;
+    align-items: center;
+    /*text-align: center;*/
+    margin-right: 10px;
+    box-shadow: 0 0 2px #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+}

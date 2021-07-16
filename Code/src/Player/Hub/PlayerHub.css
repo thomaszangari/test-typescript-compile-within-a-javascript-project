@@ -1,0 +1,8 @@
+.nav-tabs a {
+    background-color: #173E67;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.app-tab-panel .nav-tabs {
+    margin-left: 1.3%;
+}

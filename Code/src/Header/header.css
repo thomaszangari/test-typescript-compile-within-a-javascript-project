@@ -1,0 +1,9 @@
+.app-header {
+    text-align: center;
+    /* padding-top: 1%; */
+    width: 100%;
+    /* border-bottom: white solid 1px; */   
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+}

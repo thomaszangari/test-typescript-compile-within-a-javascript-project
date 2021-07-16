@@ -1,0 +1,30 @@
+.system-details-panel{
+    padding: 10px 15px;
+    background-color: #173E67;
+    /* position: absolute; */
+    top: 15px;
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+}
+.system-details-rows{
+    float: left;
+    width: 80%
+}
+.system-details-header{
+    text-align: right;
+    clear: both;
+    float:left;
+    margin-right:15px;
+    display: flex;
+    color:white;
+    font-size: medium;
+}
+
+.system-details-text{
+    color:white;
+    position: relative;
+    display: flex;
+    margin-left: 200px;
+    font-size: medium;
+}

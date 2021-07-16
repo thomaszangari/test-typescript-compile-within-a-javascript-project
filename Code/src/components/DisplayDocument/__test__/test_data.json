@@ -1,0 +1,17 @@
+{    
+        "documents": [
+            {
+                "url": "./../../../me.png",
+                "uploadId": "8d16ac5b-9440-4595-88c4-f37901ed08a4",
+                "documentType": "Govt. Issued Id (Front)",
+                "createdAt": "2021-06-15T19:50:44.062Z"
+            },
+            {
+                "url": "",
+                "uploadId": "29ccfb92-e4d7-4459-8ab6-92aaab372dad",
+                "documentType": null,
+                "createdAt": "2021-06-15T19:56:31.088Z"
+            }
+        ]
+    
+}

@@ -1,0 +1,71 @@
+.user-icon {
+    text-align: right;
+    cursor: pointer;
+}
+.edit-icon {
+    cursor: pointer;
+}
+
+.delete-popup {
+    margin-top: 10%;
+    /*margin-left: 50%;*/
+    /*z-index: 999;*/
+}
+.hide-user-popup {
+    opacity: 0.5;
+}
+.role-management {
+    /*position: relative;*/
+    /*margin-left: 5%;*/
+    /*margin-right: 5%;*/
+    /*padding-left: 10%;*/
+    /*padding-right: 10%;*/
+    /*background-color: red;*/
+    /*box-shadow: 0 0 30px red;*/
+    margin: 0 2px;
+
+}
+.role-management-child {
+    /*margin: 0;*/
+    /*position: absolute;*/
+    /*top: 35%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*box-shadow: 0 0 18px #005288;*/
+    /*background-color: #005288;*/
+
+    margin: 0;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    left: 10px;
+    margin-top: 2px;
+    box-shadow: 0 0 18px #173e67;
+    background-color: #173e67;
+    /*top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
+}
+
+.modal-content {
+    background-color: #173e67 !important;
+    box-shadow: 0 0 18px #173e67;
+}
+.modal-header {
+    color: #FFFFFF;
+    /*text-transform: uppercase;*/
+}
+.edit-role-table {
+    width: 100% !important;
+}
+.form-check-input {
+    cursor: pointer;
+}
+.role-table-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-weight: 600;
+}

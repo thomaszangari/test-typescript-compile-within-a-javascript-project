@@ -1,0 +1,19 @@
+.react-table {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #173E67;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+.react-table td, .react-table th {
+    font-size: 12px;
+}
+.react-table td {
+    color: #FFFFFF;
+}
+
+.pagination {
+    justify-content: flex-end;
+}

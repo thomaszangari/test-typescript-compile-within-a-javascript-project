@@ -1,0 +1,66 @@
+.ach-activity-container {
+    margin: 2px 0;
+    position: relative;
+}
+
+.ach-activity-panel {
+    padding: 10px 0;
+    background-color: #173E67;
+    border-radius: 4px;
+}
+.ach-filter-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.ach-flex-column {
+    /*width: 15%;*/
+}
+
+.ach-activity-child {
+    /*min-width: 100px;*/
+    margin: 0;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    left: 1%;
+    /*box-shadow: 0 0 18px #005288;*/
+    /*background-color: #005288;*/
+}
+
+.ach-update-user-table {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #173E67;
+    border-radius: 4px;
+}
+.ach-activity-container input,  .ach-activity-container .form-group{
+    min-width: unset;
+    margin-bottom: 0
+}
+
+.ach-date-label {
+    margin-bottom: 8px;
+}
+.ach-input-label {
+    color: #ddecef;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.ach-popup-error {
+    color: #ddecef;
+    font-size: 18px;
+    text-align: center;
+}
+.ach-error-message {
+    color: #f61c1c;
+    margin-top: 4px;
+    font-size: 12px;
+}
+.ach-link {
+    cursor: pointer;
+}
+.ach-activity-container .custom-toast {
+    z-index: 999;
+    margin-top: -7%;
+}

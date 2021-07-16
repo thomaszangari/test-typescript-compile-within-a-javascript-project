@@ -1,0 +1,137 @@
+.frequentcasher-search-container {
+    margin: 2px 0;
+    position: relative;
+}
+
+.frequentcasher-details-container {
+    margin: 2px 0;
+    position: relative;
+}
+.frequentcasher-details-child {
+    /*min-width: 100px;*/
+    margin: 0;
+    position: relative;
+    top: 1%;
+    right: 1%;
+    left: 1%;
+    min-height: 280px;
+    max-height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*box-shadow: 0 0 18px #005288;*/
+    /*background-color: #005288;*/
+}
+.frequentcasher-details-panel {
+    padding: 10px 15px;
+    background-color: #173E67;
+    /*position: absolute;*/
+    top: 15px; bottom: 15px; left: 20px; right: 20px;
+}
+.frequentcasher-details-panel input[type=text] {
+    min-width: 100px !important;
+    max-width: 120px !important;
+    margin-bottom: 2px !important;
+    font-size: 13px !important;
+    height: 25px !important;
+    padding-left: 0;
+}
+.frequentcasher-details-panel select {
+    /*min-width: 100px !important;*/
+    min-width: 120px !important;
+    font-size: 14px !important;
+    padding: 2px;
+}
+.frequentcasher-details-panel .app-textbox {
+    margin-bottom: 0 !important;
+}
+.frequentcasher-details-label {
+    color: #ddecef;
+    font-size: 13px;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+}
+.frequentcasher-details-value {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: normal;
+    /*text-transform: uppercase;*/
+}
+.frequentcasher-details-panel .row {
+    margin-top: 1%;
+
+}
+.frequentcasher-details-btn {
+    margin-top: 10px;
+    justify-content: center;
+    min-height: 30px;
+    min-width: 110px;
+    background-color: #1E4B75;
+    border-color: #1E4B75;
+    color: #FFFFFF;
+    align-items: center;
+    /*text-align: center;*/
+    margin-right: 10px;
+    box-shadow: 0 0 2px #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.frequentcasher-details-btn:hover {
+    background-color: #359FB1;
+    border-color: #359FB1;
+}
+.frequentcasher-invalid-email {
+    color: red;
+    font-size: 13px;
+}
+.separator {
+    border: 1px solid #FFFFFF;
+}
+.button-column {
+    text-align: center;
+}
+.button-column .frequentcasher-details-btn {
+    min-width: 150px;
+}
+.frequentcasher-button-row {
+    margin-bottom: 1%;
+}
+
+.frequentcasher-details-container .success-message {
+    min-height: auto !important;
+    top: -12% !important;
+}
+.verify-player-link, .verify-player-link:hover {
+    color: #FFFFFF !important;
+}
+.no-data-message {
+    color: #FFFFFF;
+}
+
+.frequentcasher-search-panel {
+    padding: 15px 20px;
+    background-color: #173E67;
+}
+
+.frequentcasher-search-child {
+    /*min-width: 100px;*/
+    margin: 0;
+    position: relative;
+    top: 10px;
+    right: 1%;
+    left: 0%;
+    /*box-shadow: 0 0 18px #005288;*/
+    /*background-color: #005288;*/
+}
+
+.update-user-table {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #173E67;
+    border-radius: 4px;
+}
+
+/*
+.frequentcasher-details-container .custom-toast {
+    top: -15% !important;
+    margin-top: -14% !important;
+}*/

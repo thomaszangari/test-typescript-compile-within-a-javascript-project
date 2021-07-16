@@ -1,0 +1,63 @@
+.dashboard-panel {
+    filter: drop-shadow(18px 18px 18px  #005288);
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 82, 136, 0.5);
+    /*opacity: 0.5;*/
+}
+
+.dashboard-card {
+    /*cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background-color: #005288;
+    height: 100px;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    align-items: center;
+    box-shadow: 0 0 13px #005288;*/
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    align-items: center;
+    width: 300px;
+    height: 64px;
+    border-radius: 5px;
+    background: #1e4b75;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+    font-family: Barlow;
+    font-weight: 400;
+}
+.dashboard-card:hover {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    align-items: center;
+    width: 300px;
+    height: 64px;
+    border-radius: 5px;
+    background: #359FB1;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+    font-family: Barlow;
+    font-weight: 400;
+}
+.dashboard-card-icon img {
+    width: 35px;
+    height: 40px;
+    margin-right: 10px;
+}
+.dashboard-card-label {
+    font-size: 16px;
+    color: #FFFFFF;
+    /*text-transform: uppercase;*/
+}
+.dashboard-card:hover {
+    background-color: #359FB1;
+    border-color: #359FB1;
+}

@@ -1,0 +1,30 @@
+.light-table{
+    color: rgb(240, 240, 240);
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 15px;
+}
+
+.light-table thead{
+    background-color: rgb(49, 109, 156);
+}
+
+.light-table tr{
+    height: 48px;
+}
+
+.light-table td{
+    padding-left: 10px;
+}
+
+.light-table tbody tr:nth-child(even){
+    background: rgb(29, 69, 111);
+}
+
+.light-table tbody tr:nth-child(odd){
+    background: rgb(20, 52, 85);
+}
+
+.light-table tbody tr a{
+    color: white;
+}

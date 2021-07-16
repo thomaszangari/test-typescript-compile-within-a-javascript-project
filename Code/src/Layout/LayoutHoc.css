@@ -1,0 +1,8 @@
+.my-app {
+    background-image: url("/images/MASSLotterycolor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-panel {
+    margin-top: 8%;
+}
