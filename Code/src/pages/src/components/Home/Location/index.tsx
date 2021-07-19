@@ -274,7 +274,7 @@ const createLocationWithOutCommas = (value:any) =>{
         {(language === 'spanish') && <>{'<Spanish>'}<label htmlFor="find_rx">Enter Your location</label></>}
 
 
-        {((Object.keys(getLocation).length !== 0 && valueForInputValue !== undefined) ?
+        {/* {((Object.keys(getLocation).length !== 0 && valueForInputValue !== undefined) ?
           <div className="results">
             {valueForInputValue} <u className='cursor' onClick={clearInput}>
               {(language === 'english' || language === undefined) && 'Clear'}
@@ -293,7 +293,7 @@ const createLocationWithOutCommas = (value:any) =>{
                 )}
             </datalist>
           </>)
-        }
+        } */}
 
         {(Object.keys(getLocation).length === 0) && <><div onClick={getCurrentPosition}>
           {(language === 'english' || language === undefined) &&
@@ -329,12 +329,12 @@ const createLocationWithOutCommas = (value:any) =>{
 
         </Link>
 
-        {((Object.keys(getLocation).length !== 0) || location) &&
+       
 
           <Link className='cursor' to={
             
               {
-                pathname: '/src/components/Home',
+                pathname: '/dashboard',
                 query: {
                   component: 'choose-your-coupon',
                   prescriptions: prescriptionFromRoute,
@@ -347,7 +347,7 @@ const createLocationWithOutCommas = (value:any) =>{
             {(language === 'english' || language === undefined) && 'Next: Step3'}
             {language === 'spanish' && '<Spanish>Next: Step3'}
             {'>>'}
-          </Link>}
+          </Link>
       </div>
 
 

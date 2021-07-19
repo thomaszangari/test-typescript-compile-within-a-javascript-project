@@ -54,7 +54,7 @@ import ChooseYourCoupon  from "./pages/src/components/Home/ChooseYourCoupon";
 import CouponDetails  from "./pages/src/components/Home/CouponDetails";
 import FindPrescriptionHome  from "./pages/src/components/Home/FindPrescriptionHome";
 import Home  from "./pages/src/components/Home";
-
+import './globals.css';
 
 const PrivateRoute = ({component: Component, ...rest}) => {
         const authed = localStorage.getItem('userName');
@@ -70,12 +70,13 @@ const PrivateRoute = ({component: Component, ...rest}) => {
 }
 const Routes = props => (
     <Switch>
-            {/* <Route exact path="/" component={LoginComponent} /> */}
-            <Route exact path="/" >
+            <Route exact path="/" component={LoginComponent} />
+            
+            <Route path='/src/components/home'>
                 <Home />
             </Route>
-            <Route path="/src/components/" >
-               <FindPrescriptionHome  language ={undefined} location = {undefined} prescriptionFromRoute={""} getPrescriptionDetails={""} setPrescriptionDetails={""} />
+            <Route path='/src/components/location' > 
+                <Home  router={{component:'location'}} />
             </Route>
             <Route exact path="/login" component={LoginComponent} />
             <PrivateRoute path="/usermanagement" component={(props) => <UserManagementComponent title="User Management" {...props} showBackButton={true} />} />

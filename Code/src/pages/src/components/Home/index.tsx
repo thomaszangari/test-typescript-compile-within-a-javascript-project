@@ -27,7 +27,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
  */
 
  const r ={
-    component:"",
+    component:undefined,
     prescriptions:"",
     location:"",
     coupon:"",
@@ -47,9 +47,9 @@ const Home = ({router = r }:any) => {
             language,
     }  = router;
 
-
+    console.log( 'router', router );
     /**@gets @sets  sets the has path for reload page in order not to flicker beteween components */
-    const [routerHasPath, setRouterHasPath] = useState((router.asPath === '/' ? false : true));
+    const [routerHasPath, setRouterHasPath] = useState(( false));
 
     let data = {
         search_name: "",        
@@ -99,8 +99,8 @@ const Home = ({router = r }:any) => {
 
                     
                     {(container === undefined || container === '' || container === null) &&
-                        <>
-
+                        <> 
+                            {console.log('component', component)}
                             {/** first component when the page   loads*/}
                             {((component === undefined || component === '' || component === null) && !routerHasPath) && <FindPrescriptionHome  language={language} prescriptionFromRoute={prescriptions} getPrescriptionDetails={getPrescription} setPrescriptionDetails={setPrescription} />}
                             {component === 'choose-your-coupon' && < ChooseYourCoupon language={language} prescriptionFromRoute={prescriptions} location={location} />}
@@ -114,9 +114,9 @@ const Home = ({router = r }:any) => {
 
 
                             {component === 'location' && <Location  language={language} prescriptionFromRoute={prescriptions} location={location} />}
-
+                            {console.log('component1' , component)}    
                         </>}
-                    {container === 'coupon' && <CouponDetails language={language} windowWidth={windowWidth} prescription={prescriptions} coupon={coupon} />}
+                    {/* {container === 'coupon' && <CouponDetails language={language} windowWidth={windowWidth} prescription={prescriptions} coupon={coupon} />} */}
 
                 </section>
 

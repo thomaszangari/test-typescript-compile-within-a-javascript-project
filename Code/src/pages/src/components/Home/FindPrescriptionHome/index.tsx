@@ -33,7 +33,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
  * @useState setPrescriptionDetails // sets the prescription chosen 
  */
 
-export default function FindPrescriptionHome({ language, location = undefined, prescriptionFromRoute, getPrescriptionDetails, setPrescriptionDetails }:any) {
+export default function FindPrescriptionHome({ language = undefined, location = undefined, prescriptionFromRoute = undefined, getPrescriptionDetails, setPrescriptionDetails }:any) {
 
   /**@gets @sets the prescriptions array passed in from the mutation used for datalist */
   const [prescriptionsforDataList, setPrescriptionsForDataList] = useState([]);
@@ -48,7 +48,7 @@ export default function FindPrescriptionHome({ language, location = undefined, p
   const [valueForInputValue, setValueForInputValue] = useState("");
 
   /**@gets @sets the value from the input field */
-  const [ifPrescriptionDetailsExists, setIfPrescriptionDetailsExists] = useState((prescriptionFromRoute !== undefined ? true : false));
+  const [ifPrescriptionDetailsExists, setIfPrescriptionDetailsExists] = useState(true);
 
 
 
@@ -141,10 +141,10 @@ export default function FindPrescriptionHome({ language, location = undefined, p
    */
   useEffect(() => {
 
-    if (prescriptionFromRoute !== undefined) {
-      setPrescriptionsDataFromRoute();
-      setIfPrescriptionDetailsExists(true);
-    }
+    // if (prescriptionFromRoute !== undefined) {
+    //   setPrescriptionsDataFromRoute();
+    //   setIfPrescriptionDetailsExists(true);
+    // }
   }, []);
 
   /**
@@ -176,11 +176,11 @@ export default function FindPrescriptionHome({ language, location = undefined, p
       {(language === 'english' || language === undefined) && <> <h3><span>Start Here: Step 1 of 3: </span>Your Prescription</h3></>}
       {language === 'spanish' && <><h3><span>{'<Spanish>'} Start Here: Step 1 of 3: </span>Your Prescription</h3></>}
 
-
+     
       <form id="find_rx" className="find_rx">
         {(language === 'english' || language === undefined) && <label htmlFor="find_rx">Enter Drug Name</label>}
         {language === 'spanish' && <label htmlFor="find_rx">{'<Spanish>'}Enter Drug Name</label>}
-
+{/* 
         <input
           autoComplete="off"
           onFocus={clearInput}
@@ -195,28 +195,23 @@ export default function FindPrescriptionHome({ language, location = undefined, p
           className="desktop-main-left-find-prescription-home-datalist"
           id="prescriptions">
          {prescriptionsforDataList.map((element:any,i) => <option key={`prescription${i}`} value={element._text} />)}
-        </datalist>
+        </datalist> */}
         
-
+       
         {ifPrescriptionDetailsExists &&
           <>
-            {console.log('ifPrescriptionDetailsExists',ifPrescriptionDetailsExists)}
+            
             <div style={{width:'inherit',height:'3vh'}} > </div>
              {/* <PrescriptionDetailedForm language={language} dataFromServer={prescriptionDetailsForPrescriptionDetailComponent} prescriptionFromRoute={prescriptionFromRoute} setPrescriptionDetails={setPrescriptionDetails} /> */}
             <div className="clickthrough">
               <a><div className="back cursor" onClick={clearInput}>Start Over</div></a>
               <Link className='cursor' to={                
                   {
-                    pathname: '/src/components/Home',
-                    query: {
-                      component: 'location',
-                      prescriptions: JSON.stringify(getPrescriptionDetails),
-                      location: location,
-                      language: language
-                    }
+                    pathname: '/src/components/location',
+                   
                   }                
                 }
-              > {(language === 'english' || language === undefined) && 'Next: Step2 >>'} {language === 'spanish' && '<Spanish>Next: Step2 >>'}
+              > <div className='cursor'>{'Next: Step2 >>'} {language === 'spanish' && '<Spanish>Next: Step2 >>'}</div>
               </Link>
             </div>
 

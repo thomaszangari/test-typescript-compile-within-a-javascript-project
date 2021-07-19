@@ -13,7 +13,7 @@ class Dashboard extends React.Component {
 
     navigateTo = (path) => {
 
-        if (path === '/claimsupport')
+        if (path === '/src/components/home')
             this.props.playerStore.logAction(UserActionCategory.PAGE_VIEW, UserAction.CLAIM_SUPPORT);
         else if (path === '/playersupport')
             this.props.playerStore.logAction(UserActionCategory.PAGE_VIEW, UserAction.PLAYER_SUPPORT);
@@ -30,7 +30,7 @@ class Dashboard extends React.Component {
                 {checkRenderPermissions(permissions.SEE_CLAIM_SUPPORT, JSON.parse(localStorage.getItem('userpolicies'))) ?
                     <CustomCard
                         title='Claim Support'
-                        handleCallback={() => this.navigateTo('/claimsupport')}
+                        handleCallback={() => this.navigateTo('/src/components/home')}
                     /> : null}
                 {checkRenderPermissions(permissions.SEE_PLAYER_SUPPORT, JSON.parse(localStorage.getItem('userpolicies'))) ?
                     <CustomCard
