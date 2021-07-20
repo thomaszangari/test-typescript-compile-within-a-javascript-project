@@ -34,8 +34,8 @@ import CircularProgress from '@material-ui/core/CircularProgress';
     container:"",
     language:"",
 }  ;
-
-const Home = ({router = r }:any) => {
+let requestMade:boolean = false;
+const Home = ({router = r, playerStore }:any) => {
     
 
     const{
@@ -47,7 +47,7 @@ const Home = ({router = r }:any) => {
             language,
     }  = router;
 
-    console.log( 'router', router );
+   
     /**@gets @sets  sets the has path for reload page in order not to flicker beteween components */
     const [routerHasPath, setRouterHasPath] = useState(( false));
 
@@ -68,12 +68,23 @@ const Home = ({router = r }:any) => {
     //     setWindowWidth(window.innerWidth);
     // }
 
-    // useEffect(() => {
-    //     setWindowWidth(window.innerWidth);
-    //     window.addEventListener(
-    //         "resize", getSizes, false);
+    useEffect(() => {
 
-    // });
+        if( playerStore.isSpinnerLoading  === false  &&  requestMade === false)
+        {
+            console.log('playerStore.isSpinnerLoading', playerStore.isSpinnerLoading);
+            playerStore. getPlayerDetails(); 
+            requestMade = true;
+        }
+        if(playerStore.isSpinnerLoading  === true)
+        {
+            requestMade = false;
+        }
+        // setWindowWidth(window.innerWidth);
+        // window.addEventListener(
+        //     "resize", getSizes, false);
+
+    });
 
     const setPrescription = (value:any) => {
 

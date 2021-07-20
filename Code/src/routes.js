@@ -55,6 +55,8 @@ import CouponDetails  from "./pages/src/components/Home/CouponDetails";
 import FindPrescriptionHome  from "./pages/src/components/Home/FindPrescriptionHome";
 import Home  from "./pages/src/components/Home";
 import './globals.css';
+import { rootStore } from './store/RootStore';
+import { PlayerStore } from './store/PlayerStore';
 
 const PrivateRoute = ({component: Component, ...rest}) => {
         const authed = localStorage.getItem('userName');
@@ -68,12 +70,15 @@ const PrivateRoute = ({component: Component, ...rest}) => {
       
     return ( enviroment )
 }
-const Routes = props => (
+const Routes = props => {
+    const playerStore = new PlayerStore(rootStore);
+   
+    return (
     <Switch>
             <Route exact path="/" component={LoginComponent} />
             
             <Route path='/src/components/home'>
-                <Home />
+                <Home  playerStore ={playerStore}/>
             </Route>
             <Route path='/src/components/location' > 
                 <Home  router={{component:'location'}} />
@@ -140,7 +145,7 @@ const Routes = props => (
             <PrivateRoute component={Notfound} />
 
     </Switch>
-);
+)};
 
 export default Routes
 
